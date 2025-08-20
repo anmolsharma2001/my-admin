@@ -2,68 +2,92 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
-  .landing-navbar {
-    background: #2a9d8f;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-
-    ul {
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-
-      li a {
-        text-decoration: none;
-        color: white;
-        font-weight: 500;
-
-        &.btn {
-          padding: 0.5rem 1rem;
-          background: #264653;
-          border-radius: 6px;
-        }
-      }
-    }
-  }
+  background: linear-gradient(135deg, #264653, #2a9d8f);
 
   .landing-content {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+  }
+
+  .hero {
     text-align: center;
-    padding: 3rem;
+    max-width: 700px;
+    color: white;
+
+    .hero-text {
+      animation: fadeIn 1s ease-in-out;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+
+        span {
+          color: #e9c46a;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+      }
+    }
 
     .cta-buttons {
-      margin-top: 1.5rem;
       display: flex;
-      gap: 1rem;
+      gap: 1.2rem;
+      justify-content: center;
 
       .btn {
-        padding: 0.75rem 1.5rem;
-        border-radius: 8px;
+        padding: 0.8rem 1.5rem;
+        border-radius: 10px;
         text-decoration: none;
-        color: white;
         font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
 
         &.primary {
           background: #e76f51;
+          color: white;
+
+          &:hover {
+            background: #f28466;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+          }
         }
+
         &.secondary {
-          background: #264653;
+          background: #2a9d8f;
+          color: white;
+
+          &:hover {
+            background: #38b7a7;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+          }
         }
       }
     }
   }
-
-  .landing-footer {
-    background: #2a9d8f;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
 }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.slide-up {
+  animation: fadeIn 1.2s ease-in forwards;
+}
+
+

@@ -1,8 +1,16 @@
-import "./users.scss"
-function Users() {
-  return (
-    <div className='users'>Users</div>
-  )
-}
 
-export default Users
+import Single from "../../components/single/Single";
+import { singleUser } from "../../data";
+import "./users.scss";
+
+const User = () => {
+  //Fetch data and send to Single Component
+
+  return (
+    <div className="user">
+      <Single {...singleUser} />
+    </div>
+  );
+};
+
+export default User;

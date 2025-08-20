@@ -1,4 +1,5 @@
 import React from "react";
+import "./landingFooter.scss"
 
 const LandingFooter: React.FC = () => {
   return (

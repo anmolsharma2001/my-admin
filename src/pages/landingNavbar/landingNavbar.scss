@@ -1,0 +1,63 @@
+.landing-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #264653;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .navItems {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #e9c46a;
+      }
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+
+      .btn {
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        transition: background 0.3s, transform 0.2s;
+
+        &.primary {
+          background: #e76f51;
+
+          &:hover {
+            background: #f28466;
+            transform: translateY(-2px);
+          }
+        }
+
+        &.secondary {
+          background: #2a9d8f;
+
+          &:hover {
+            background: #38b7a7;
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+  }
+}

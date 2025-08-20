@@ -6,7 +6,7 @@ export const menu = [
       {
         id: 1,
         title: "Homepage",
-        url: "/",
+        url: "/dashboard",
         icon: "home.svg",
       },
       {
@@ -21,16 +21,16 @@ export const menu = [
     id: 2,
     title: "lists",
     listItems: [
-      {
-        id: 1,
-        title: "Users",
-        url: "/users",
-        icon: "user.svg",
-      },
+      // {
+      //   id: 1,
+      //   title: "Users",
+      //   url: "/dashboard/users",
+      //   icon: "user.svg",
+      // },
       {
         id: 2,
-        title: "Products",
-        url: "/products",
+        title: "Users",
+        url: "/dashboard/products",
         icon: "product.svg",
       },
       {
