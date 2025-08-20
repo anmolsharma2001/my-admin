@@ -29,7 +29,7 @@ export const menu = [
       // },
       {
         id: 2,
-        title: "Users",
+        title: "Suppliers",
         url: "/dashboard/products",
         icon: "product.svg",
       },
